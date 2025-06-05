@@ -1,0 +1,27 @@
+### Create Author
+POST http://localhost:3000/authors
+Content-Type: application/json
+
+{
+  "name": "Nolan Graymson",
+  "book_name": "Harry Potter",
+  "education": "BA English Litrature, Oxford UN",
+  "number_of_books": 7
+}
+
+### Get All Authors
+GET http://localhost:3000/authors
+
+### Get Author by ID
+GET http://localhost:3000/authors
+
+### Update Author
+PATCH http://localhost:3000/authors
+Content-Type: application/json
+
+{
+  "education": "Updated Education"
+}
+
+### Delete Author
+DELETE http://localhost:3000/authors

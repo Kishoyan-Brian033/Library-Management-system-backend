@@ -1,0 +1,32 @@
+### Create Member
+POST http://localhost:3000/members
+Content-Type: application/json
+
+{
+  "name": "Jane Doe",
+  "email": "jane@example.com",
+  "phone": "0712345678"
+}
+
+### Get All Members
+GET http://localhost:3000/members
+
+### Get Only Active Members
+GET http://localhost:3000/members?active=true
+
+### Get Member by ID
+GET http://localhost:3000/members
+
+### Update Member
+PATCH http://localhost:3000/members
+Content-Type: application/json
+
+{
+  "phone": "0799999999"
+}
+
+### Deactivate Member (soft delete)
+DELETE http://localhost:3000/members
+
+### Permanently Delete Member
+DELETE http://localhost:3000/members
