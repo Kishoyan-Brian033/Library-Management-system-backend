@@ -13,7 +13,7 @@ export const databaseConfig: DatabaseConfig = {
   port: parseInt(process.env.DB_PORT || '5432'),
   database: process.env.DB_NAME || 'hotel_management',
   username: process.env.DB_USERNAME || 'postgres',
-  password: process.env.DB_PASSWORD || 'brian@2025',
+  password: process.env.DB_PASSWORD ~,
   ssl: process.env.NODE_ENV === 'production',
 };
 
